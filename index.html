@@ -4,138 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jun Joseph Juare - Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #f9f9f9, #e3e3e3);
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            scroll-behavior: smooth;
         }
-        header {
-            background: #0078D7;
-            color: #ffffff; /* Changed to white for better contrast */
+        nav {
+            background: #3498db;
+            padding: 15px;
             text-align: center;
-            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
-        .main-container {
-            width: 80%;
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #f1c40f;
+        }
+        .container {
+            max-width: 800px;
             margin: auto;
+            padding: 80px 20px;
+        }
+        section {
+            margin-bottom: 50px;
             padding: 20px;
             background: white;
-        }
-        .section-container {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #e0e0e0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
-        h1, h2, h3 {
-            color: #0078D7;
+        h1, h2 {
+            color: #3498db;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li {
-            background: #ddd;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .footer {
+        footer {
             text-align: center;
             padding: 20px;
-            background: #0078D7;
+            background: #3498db;
             color: white;
-            margin-top: 20px;
+            position: relative;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Jun Joseph Juare</h1>
-        <p>IT Expert | Software Developer | Multimedia Editor</p>
-    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <div class="main-container">
-        
-        <div class="section-container">
-            <h2>About Me</h2>
-            <p>I am an IT specialist with over 5 years of experience in programming and development. My expertise includes:</p>
-            <ul>
-                <li>React Native (Mobile App Development)</li>
-                <li>Progressive Web Apps (PWA)</li>
-                <li>Multi-platform Development</li>
-                <li>Web Development</li>
-                <li>Multimedia Editing (Video & Graphics)</li>
-            </ul>
-        </div>
+    <div class="container">
+        <section id="about">
+            <h1>Jun Joseph Juare</h1>
+            <p><strong>IT Expert | Software Developer | Multimedia Editor</strong></p>
+            <p>I am an IT specialist with over 5 years of experience in programming and development.</p>
+        </section>
 
-        <div class="section-container">
+        <section id="experience">
             <h2>Work Experience</h2>
-            <h3>Information Technology Specialist</h3>
-            <p><strong>College of St. John-Roxas</strong> (Aug 2020 – Dec 2023)</p>
-            <ul>
-                <li>Managed IT systems and infrastructure</li>
-                <li>Developed and maintained internal applications</li>
-                <li>Provided technical support and troubleshooting</li>
-            </ul>
+            <p><strong>Information Technology Specialist</strong> - College of St. John-Roxas (2020 – 2023)</p>
+            <p>Managed IT systems and developed internal applications.</p>
+        </section>
 
-            <h3>IT Auditor</h3>
-            <p><strong>Maribert Corporation (Federico Delcano Jr Agency)</strong> (Dec 2018 – Sep 2019)</p>
-            <ul>
-                <li>Conducted IT system audits</li>
-                <li>Ensured compliance with data security standards</li>
-            </ul>
-
-            <h3>RDSI (Regional Distributor Sales Information)</h3>
-            <p><strong>Lemacel Trading Corporation (URC Distributor)</strong> (Aug 2016 – Nov 2018)</p>
-            <ul>
-                <li>Managed sales and inventory software</li>
-                <li>Developed reporting tools for data analytics</li>
-            </ul>
-        </div>
-
-        <div class="section-container">
-            <h2>Education</h2>
-            <p><strong>Hercor College</strong> – Bachelor of Science in Computer Science (2016)</p>
-        </div>
-
-        <div class="section-container">
+        <section id="projects">
             <h2>Clients & Projects</h2>
-            <h3>Corporate Clients</h3>
-            <ul>
-                <li>Hercor College High School</li>
-                <li>Lemacel Trading Corporation BTDT Online Booking App(Roxas, Kalibo, Iloilo, Bacolod)</li>
-                <li>College of St. John-Roxas</li>
-                <li>J Pimentel Survey Service (Surey Plans Record Data System)</li>
-                <li>Betita Family Clinic (New Patient Information Managment System)</li>
-            </ul>
+            <p><strong>Corporate Clients:</strong> Hercor College, Lemacel Trading Corporation, College of St. John-Roxas.</p>
+            <p><strong>Freelance Projects:</strong> San Antonio Resort Promotional Video, Freelance Wedding Photography.</p>
+        </section>
 
-            <h3>Freelance Projects</h3>
-            <ul>
-                <li>Posters & Video making</li>
-                <li>San Antonio Resort (Promotional Video)</li>
-                <li>Freelance Wedding Photography</li>
-                <li>Data Encoder – J Pimentel Survey Banica</li>
-            </ul>
-        </div>
-
-        <div class="section-container">
+        <section id="contact">
             <h2>Contact Me</h2>
-            <p><strong>Email:</strong> juarejunjoseph@gmail.com</p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/jun-joseph" target="_blank">github.com/jun-joseph</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jun-joseph-juare" target="_blank">linkedin.com/in/jun-joseph-juare</a></p>
-            <p><strong>Contact No.:</strong> 09693814390 or 09673376083</p>
-        </div>
-
+            <p>Email: your.email@example.com</p>
+            <p>GitHub: github.com/jun-joseph</p>
+        </section>
     </div>
 
-    <div class="footer">
-        <p>© 2025 Jun Joseph Juare. All Rights Reserved.</p>
-    </div>
+    <footer>
+        © 2025 Jun Joseph Juare. All Rights Reserved.
+    </footer>
 
 </body>
 </html>
